@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "date": "2026-11-08",
-  "scope": "Opening X battle skip incremental patches only; requires exact existing localized base ROM, not Japanese original.",
+  "scope": "patches: two X-only increments from localized bases; full_localization_patches: two frozen JP-to-R45 full localization BPS artifacts.",
   "patches": [
     {
       "file": "R29-to-R30-X.bps",
@@ -28,6 +28,28 @@
       "status": "exact_release_match",
       "patch_sha256": "0664ee85a40a02158d3fc224980e5bca7bd0609245f5803e866e832602876e4a",
       "patch_bytes": 171
+    }
+  ],
+  "full_localization_patches": [
+    {
+      "file": "HaruDX-v05_09-JP-to-R45-standard.bps",
+      "source_sha256": "5cea22b5995e91e7e19c9ff73a2036f1929e5f162ea56d0819628728ec3d50d0",
+      "target_sha256": "8105ce9fced0519d733de4499e7ccacb72c5c951b02fae6c0bf78001f1b738bb",
+      "patch_sha256": "757229ebdff5b68d2890223883f8cc1d521d57c124199b1bbfa7aaf7ef9daf37",
+      "patch_bytes": 801636,
+      "scope": "Frozen full R45 Chinese localization plus X feature only for X target; no full localization source rebuild in this repository.",
+      "independent_two_reader_replay": true,
+      "wrong_source_truncated_corrupt_rejected": true
+    },
+    {
+      "file": "HaruDX-v05_09-JP-to-R45-X.bps",
+      "source_sha256": "5cea22b5995e91e7e19c9ff73a2036f1929e5f162ea56d0819628728ec3d50d0",
+      "target_sha256": "82f2825c3ca462ac898a705bfbd9059d3c4f68340296fc4be127bb4a90374611",
+      "patch_sha256": "0fc9e4aebd4a9c08af010504fc06c77ffd56d667b9ebb76287a8cf9ba90b470f",
+      "patch_bytes": 801709,
+      "scope": "Frozen full R45 Chinese localization plus X feature only for X target; no full localization source rebuild in this repository.",
+      "independent_two_reader_replay": true,
+      "wrong_source_truncated_corrupt_rejected": true
     }
   ]
 }

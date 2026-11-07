@@ -113,6 +113,16 @@ class CodeContractTests(unittest.TestCase):
             self.assertEqual(hashlib.sha256(blob).hexdigest(), row['patch_sha256'])
             self.assertEqual(PAIRS[row['source_sha256']]['target_sha256'], row['target_sha256'])
 
+    def test_full_localization_patch_fingerprints(self):
+        import hashlib
+        manifest = json.loads((ROOT / 'patches/manifest.json').read_text('utf8'))
+        self.assertEqual(len(manifest['full_localization_patches']), 2)
+        for row in manifest['full_localization_patches']:
+            blob = (ROOT / 'patches' / row['file']).read_bytes()
+            self.assertEqual(hashlib.sha256(blob).hexdigest(), row['patch_sha256'])
+            self.assertEqual(zlib.crc32(blob[:-4]), int.from_bytes(blob[-4:], 'little'))
+            self.assertEqual(row['source_sha256'], '5cea22b5995e91e7e19c9ff73a2036f1929e5f162ea56d0819628728ec3d50d0')
+
 class OriginalIndexTests(unittest.TestCase):
     def test_fe_fb_operands_are_not_ff_terminators(self):
         rom = bytes.fromhex('FE FF FF FB FF FF F6 FF')
