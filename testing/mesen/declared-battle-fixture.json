@@ -1,0 +1,55 @@
+{
+  "method": "ordinary SRAM cold boot; declared controlled unit-ID, position, pilot, EN and HP fields only; native UI battle entry, no PC/VM/animation/effect-result injection",
+  "writes": [
+    {
+      "address": 6247,
+      "bytes": "9e22",
+      "reason": "slot1 mech ID158; screenshot weapon set; preserved original high9 flags"
+    },
+    {
+      "address": 6119,
+      "bytes": "3532",
+      "reason": "slot1 pilot53 level50"
+    },
+    {
+      "address": 6503,
+      "bytes": "ffff",
+      "reason": "slot1 current/max EN255"
+    },
+    {
+      "address": 6631,
+      "bytes": "1027",
+      "reason": "slot1 current HP10000"
+    },
+    {
+      "address": 6759,
+      "bytes": "1027",
+      "reason": "slot1 max HP10000"
+    },
+    {
+      "address": 6029,
+      "bytes": "110a",
+      "reason": "enemy20 position17,10 adjacent to slot1 at16,10"
+    },
+    {
+      "address": 6669,
+      "bytes": "803e",
+      "reason": "enemy20 HP16000"
+    },
+    {
+      "address": 6797,
+      "bytes": "803e",
+      "reason": "enemy20 max HP16000"
+    },
+    {
+      "address": 17666,
+      "bytes": "0000",
+      "reason": "clear old enemy20 native occupancy at1,10 (80:B73A coordinate consumer)"
+    },
+    {
+      "address": 17698,
+      "bytes": "00a8",
+      "reason": "set enemy20 native occupancy slot byte-offset40+80h at17,10 (82:AEB0 same representation)"
+    }
+  ]
+}

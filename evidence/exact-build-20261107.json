@@ -1,0 +1,49 @@
+{
+  "date_local": "2026-11-07",
+  "status": "passed",
+  "original_emitter_code_identical": true,
+  "code_hex": "c230a592c9a73dd02ba593c93dcbd024adec030df003894000d011a5ab29ff00c91e00b00fe220e6abdcfbf5a9c03d8592dcf8f5a5ac5c089283",
+  "pairs": [
+    {
+      "pair": "R29 -> R30 X",
+      "source_sha256": "897c76f1dc45573ea1313a8098c2b6dc4b3e27300bc2b622657905e48d3ef6db",
+      "target_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "size": 4194304,
+      "code_bytes": 58,
+      "changed_bytes": 63,
+      "graphics_streams_checked": 329,
+      "status": "exact_release_match",
+      "byte_equal_to_retained_release": true,
+      "cli_check_passed": true,
+      "rejections": [
+        "wrong_source",
+        "headered",
+        "truncated",
+        "already_patched",
+        "same_source_output_path"
+      ]
+    },
+    {
+      "pair": "R45 standard -> R45 X",
+      "source_sha256": "8105ce9fced0519d733de4499e7ccacb72c5c951b02fae6c0bf78001f1b738bb",
+      "target_sha256": "82f2825c3ca462ac898a705bfbd9059d3c4f68340296fc4be127bb4a90374611",
+      "size": 4194304,
+      "code_bytes": 58,
+      "changed_bytes": 63,
+      "graphics_streams_checked": 329,
+      "status": "exact_release_match",
+      "byte_equal_to_retained_release": true,
+      "cli_check_passed": true,
+      "rejections": [
+        "wrong_source",
+        "headered",
+        "truncated",
+        "already_patched",
+        "same_source_output_path"
+      ]
+    }
+  ],
+  "new_runtime_run": false,
+  "assembly_external_assembler_run": false,
+  "method": "in-memory exact rebuild and CLI check; historical runtime evidence remains separately labeled"
+}

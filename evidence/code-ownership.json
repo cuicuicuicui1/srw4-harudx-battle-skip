@@ -1,0 +1,23 @@
+{
+  "source_report": "Historical R23 build manifest (not bundled)",
+  "reservation": [
+    3894720,
+    3897572
+  ],
+  "reservation_provenance": "R22 lookup-code reservation padding after actual code end 3B6DB6",
+  "gfx329": {
+    "gfx": 329,
+    "pointer_site": 1442779,
+    "old_source": 4040080,
+    "new_source": 3894720,
+    "old_source_length": 9506,
+    "new_source_length": 2794,
+    "output_length": 21846,
+    "output_sha256": "31fcca8fb858bc902bd08fb2cc0944c1129e4656284748b827650a69e50a1940",
+    "exact_original_stream": false,
+    "symbolic_all_history_equivalence": true,
+    "end_marker": "000000"
+  },
+  "graphics_pointer_base": 1441792,
+  "remaining_bytes": 58
+}

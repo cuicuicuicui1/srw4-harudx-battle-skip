@@ -1,0 +1,13 @@
+{
+  "source_sha256": "5cea22b5995e91e7e19c9ff73a2036f1929e5f162ea56d0819628728ec3d50d0",
+  "source_size": 4194304,
+  "graphics_table_slots": 330,
+  "graphics_nonnull": 329,
+  "text_catalog_rows": 8728,
+  "text_indexed": 8725,
+  "text_unresolved": 3,
+  "raw_extraction_requested": false,
+  "scope": "Known native graphics table and inherited indexed text catalog; not whole-ROM unpacking or all live script references.",
+  "history_note": "Decompressed hashes/files assume zero-filled previous8192 bytes; history-dependent streams are labeled, not proven context-independent.",
+  "text_note": "FF-token span metadata, not proof of reachability, displayed dialogue, glyph identity or complete branch grammar."
+}

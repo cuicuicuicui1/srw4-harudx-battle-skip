@@ -1,0 +1,28 @@
+name: Bug / 崩溃或显示问题
+description: 报告 X 跳过、标准版或原改版的可复现问题
+body:
+  - type: textarea
+    id: identity
+    attributes:
+      label: ROM 与模拟器身份
+      description: 版本、标准/X/日文、SHA-256、大小、模拟器版本、作弊情况；不要上传 ROM 或存档。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 普通存档冷启动路线、关卡、机体、驾驶员、武器、先手/反击及 X 的时点。
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: 对照与诊断
+      description: 不按 X、标准版、日文原改版分别怎样；未测请直说。可贴移除私人信息的最小日志。

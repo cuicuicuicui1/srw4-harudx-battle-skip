@@ -1,0 +1,197 @@
+{
+  "status": "pass_listed_scope",
+  "cases": [
+    {
+      "tag": "r29-x-control",
+      "type": "cold",
+      "skip": false,
+      "rom_sha256": "897c76f1dc45573ea1313a8098c2b6dc4b3e27300bc2b622657905e48d3ef6db",
+      "persistent_sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322",
+      "map_return": "8120"
+    },
+    {
+      "tag": "r30-no-x",
+      "type": "cold",
+      "skip": false,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322",
+      "map_return": "8151"
+    },
+    {
+      "tag": "r30-x-held",
+      "type": "cold",
+      "skip": true,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322",
+      "map_return": "7019"
+    },
+    {
+      "tag": "r30-x-tap",
+      "type": "same-ROM checkpoint controller replay",
+      "skip": true,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322",
+      "map_return": "132"
+    },
+    {
+      "tag": "r30-x-too-late",
+      "type": "same-ROM checkpoint controller replay",
+      "skip": false,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322",
+      "map_return": "1250"
+    },
+    {
+      "tag": "r30-y-control",
+      "type": "same-ROM checkpoint controller replay",
+      "skip": false,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322",
+      "map_return": "1250"
+    },
+    {
+      "tag": "r30-kill-replay-x",
+      "type": "same-ROM checkpoint controller replay with native dialogue acknowledgment",
+      "skip": true,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "17d4141f40b610727ce110b2cc19a3f2da729a0e19e61eaabb2c3ee87f2a220c",
+      "map_return": "426"
+    },
+    {
+      "tag": "r30-kill-replay-normal",
+      "type": "same-ROM checkpoint controller replay with native dialogue acknowledgment",
+      "skip": false,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "17d4141f40b610727ce110b2cc19a3f2da729a0e19e61eaabb2c3ee87f2a220c",
+      "map_return": "1265"
+    },
+    {
+      "tag": "r30-en-x",
+      "type": "cold",
+      "skip": true,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "d20003df5f580c8760e36ff2b4d3a23be4e463307a84d586b86d6e479f77fee6",
+      "map_return": "7019"
+    },
+    {
+      "tag": "r30-ammo-no-x",
+      "type": "cold",
+      "skip": false,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "d20003df5f580c8760e36ff2b4d3a23be4e463307a84d586b86d6e479f77fee6",
+      "map_return": "8338"
+    },
+    {
+      "tag": "r30-kill-save",
+      "type": "same-ROM checkpoint, native menu save",
+      "skip": true,
+      "rom_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "persistent_sha256": "17d4141f40b610727ce110b2cc19a3f2da729a0e19e61eaabb2c3ee87f2a220c",
+      "map_return": "426"
+    }
+  ],
+  "equivalent_pairs": [
+    {
+      "left": "r29-x-control",
+      "right": "r30-no-x",
+      "byte_start": 4096,
+      "byte_end_exclusive": 8165,
+      "bytes": 4069,
+      "all_equal": true,
+      "sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322"
+    },
+    {
+      "left": "r30-no-x",
+      "right": "r30-x-held",
+      "byte_start": 4096,
+      "byte_end_exclusive": 8165,
+      "bytes": 4069,
+      "all_equal": true,
+      "sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322"
+    },
+    {
+      "left": "r30-no-x",
+      "right": "r30-x-tap",
+      "byte_start": 4096,
+      "byte_end_exclusive": 8165,
+      "bytes": 4069,
+      "all_equal": true,
+      "sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322"
+    },
+    {
+      "left": "r30-no-x",
+      "right": "r30-x-too-late",
+      "byte_start": 4096,
+      "byte_end_exclusive": 8165,
+      "bytes": 4069,
+      "all_equal": true,
+      "sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322"
+    },
+    {
+      "left": "r30-no-x",
+      "right": "r30-y-control",
+      "byte_start": 4096,
+      "byte_end_exclusive": 8165,
+      "bytes": 4069,
+      "all_equal": true,
+      "sha256": "7a09d9d709d98437fd89261f4652398de6a96098c0d1d4b1cb2303bb722eb322"
+    },
+    {
+      "left": "r30-kill-replay-x",
+      "right": "r30-kill-replay-normal",
+      "byte_start": 4096,
+      "byte_end_exclusive": 8165,
+      "bytes": 4069,
+      "all_equal": true,
+      "sha256": "17d4141f40b610727ce110b2cc19a3f2da729a0e19e61eaabb2c3ee87f2a220c"
+    },
+    {
+      "left": "r30-en-x",
+      "right": "r30-ammo-no-x",
+      "byte_start": 4096,
+      "byte_end_exclusive": 8165,
+      "bytes": 4069,
+      "all_equal": true,
+      "sha256": "d20003df5f580c8760e36ff2b4d3a23be4e463307a84d586b86d6e479f77fee6"
+    }
+  ],
+  "controller": {
+    "X_mask": "0040",
+    "opening_window_frames": 30,
+    "one_frame_tap": true,
+    "wrong_button_does_not_skip": true,
+    "outside_window_does_not_skip": true
+  },
+  "native_counter": {
+    "player_HP_before": 10000,
+    "player_HP_after": 8432,
+    "enemy_EN_before": 200,
+    "enemy_EN_after": 195
+  },
+  "ammo": {
+    "before": 18,
+    "after": 17
+  },
+  "native_save": {
+    "bytes": 8192,
+    "sha256": "b1a728085932c4a69b21c6aa557f4fd6148b61a5b41867fe222374c96d2133fc",
+    "cold_reload_route": "route-saved-cold-reload.json",
+    "checked_fields": [
+      "money1055..1057",
+      "pilot_progress17E7..17E8",
+      "enemy_mech188D..188E",
+      "enemy_HP1A0D..1A0E"
+    ]
+  },
+  "excluded_diagnostics": [
+    "probe-native-fast: original debug flag display waits for A; not a release feature",
+    "r30-ray-none and r30-ray-x: kill dialogue not acknowledged in initial cold exploration; final kill replays acknowledge it with normal A",
+    "r30-en-normal: loaded a checkpoint whose native controller latch already contained X; not counted as a no-X comparison"
+  ],
+  "limits": [
+    "Controlled stage-1 battlefield loaded from ordinary SRAM; unit/position/HP conditions are declared in fixture files.",
+    "No PC/VM/outcome writes in gameplay tests; checkpoint replays use the identical ROM and controller input only.",
+    "Ordinary battles through CB3DA4 are covered; MAP attacks and every stage/weapon/enemy-initiated route are not exhaustively tested.",
+    "Mesen only. No hardware or all-emulator compatibility claim."
+  ]
+}

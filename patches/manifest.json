@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "date": "2026-11-08",
+  "scope": "Opening X battle skip incremental patches only; requires exact existing localized base ROM, not Japanese original.",
+  "patches": [
+    {
+      "file": "R29-to-R30-X.bps",
+      "pair": "R29 -> R30 X",
+      "source_sha256": "897c76f1dc45573ea1313a8098c2b6dc4b3e27300bc2b622657905e48d3ef6db",
+      "target_sha256": "25c358d334156f600ffda2bb2b190c6512ab444e847c86e4dfcb7795a4cd2938",
+      "size": 4194304,
+      "code_bytes": 58,
+      "changed_bytes": 63,
+      "graphics_streams_checked": 329,
+      "status": "exact_release_match",
+      "patch_sha256": "05bec06b11865a3e855e66d3cf89d0bccd1e88555a86142c36ba0e7a6ca284cb",
+      "patch_bytes": 171
+    },
+    {
+      "file": "R45-standard-to-X.bps",
+      "pair": "R45 standard -> R45 X",
+      "source_sha256": "8105ce9fced0519d733de4499e7ccacb72c5c951b02fae6c0bf78001f1b738bb",
+      "target_sha256": "82f2825c3ca462ac898a705bfbd9059d3c4f68340296fc4be127bb4a90374611",
+      "size": 4194304,
+      "code_bytes": 58,
+      "changed_bytes": 63,
+      "graphics_streams_checked": 329,
+      "status": "exact_release_match",
+      "patch_sha256": "0664ee85a40a02158d3fc224980e5bca7bd0609245f5803e866e832602876e4a",
+      "patch_bytes": 171
+    }
+  ]
+}
